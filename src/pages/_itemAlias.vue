@@ -34,6 +34,10 @@ export default {
 
     this.item = item
     console.log(item)
+
+    if (!item) {
+      return this.$router.push('/404')
+    }
   }
 }
 </script>
